@@ -13,7 +13,7 @@ class Quote extends React.Component {
 	}
 
 componentDidMount() {
-	fetch("http://quotes.rest/qod.json?category=inspire")
+	fetch("https://cors-anywhere.herokuapp.com/http://quotes.rest/qod.json?category=inspire")
 	.then(res => res.json())
 	.then(
 		(result) => {
